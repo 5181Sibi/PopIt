@@ -8,9 +8,14 @@ namespace WebApplication1.Controllers
 {
     public class AdminController : Controller
     {
-        public IActionResult Index()
+        public ActionResult AdminHomePage()
         {
             return View();
         }
+        public ActionResult Profile()
+        {
+            return View();
+        }
+
     }
 }

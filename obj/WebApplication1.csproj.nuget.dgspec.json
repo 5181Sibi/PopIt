@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\WebApplication1.csproj",
-        "projectName": "WebApplication1",
+        "projectName": "PopIt",
         "projectPath": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\obj\\",
@@ -55,6 +55,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

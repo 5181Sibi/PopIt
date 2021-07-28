@@ -63,16 +63,16 @@ namespace WebApplication1.Controllers
                         //FormsAuthentication.SetAuthCookie(model.username, model.RememberMe);
                         if (validuser !=null)
                         {
-                            return RedirectToAction("Privacy");
+                            return RedirectToAction("AdminHomePage", "Admin");
 
                         }
                         if(validuser2 != null)
                         {
-                            return RedirectToAction("Index");
+                            return RedirectToAction("TeacherDashboard", "Teacher");
                         }
                         if (validuser3 != null)
                         {
-                            return RedirectToAction("Privacy");
+                            return RedirectToAction("StudentDashboard", "Students");
                         }
                     }
                     else

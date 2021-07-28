@@ -8,6 +8,11 @@ namespace WebApplication1.Controllers
 {
     public class TeacherController : Controller
     {
+
+        public ActionResult TeacherDashboard()
+        {
+            return View();
+        }
         public ActionResult Profile()
         {
             return View();

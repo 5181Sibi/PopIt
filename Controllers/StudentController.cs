@@ -10,6 +10,11 @@ namespace WebApplication1.Controllers
     
         public class StudentsController : Controller
         {
+
+                 public ActionResult StudentDashboard()
+                 {
+                     return View();
+                 }
                 public ActionResult Profile()
                 {
                     return View();

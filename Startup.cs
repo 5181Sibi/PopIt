@@ -51,6 +51,8 @@ namespace WebApplication1
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                //endpoints.MapRazorPages(); //Routes for pages
+                //endpoints.MapControllers(); //Routes for my API controllers
             });
         }
     }
