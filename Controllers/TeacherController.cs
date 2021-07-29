@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public ActionResult StudyMaterials()
+        public ActionResult UploadMaterials()
         {
             return View();
         }

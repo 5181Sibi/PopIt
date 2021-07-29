@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace WebApplication1.Models
+namespace PopIt.Models
 {
     public partial class PopItContext : DbContext
     {
@@ -36,7 +36,7 @@ namespace WebApplication1.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=ASPLAPR405;Database=PopIt;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=ASPLAPR378;Database=PopIt;Trusted_Connection=True;");
             }
         }
 

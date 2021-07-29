@@ -16,6 +16,25 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public ActionResult ManageStudent()
+        {
+
+
+            return View();
+        }
+        public ActionResult ManageTeacher()
+        {
+            return View();
+        }
+        public ActionResult MappingStudentTeacher()
+        {
+            return View();
+        }
+        public ActionResult Logout()
+        {
+            return View();
+        }
+
 
     }
 }

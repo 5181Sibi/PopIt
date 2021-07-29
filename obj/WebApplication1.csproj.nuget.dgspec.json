@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\WebApplication1.csproj",
         "projectName": "PopIt",
-        "projectPath": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\Desktop\\Application\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rubiga.rangasamy.ASPIRESYS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,6 +71,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.17, 3.1.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -79,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,90 +1,94 @@
 ﻿@model WebApplication1.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
 
-
-@{ ViewData["Title"] = "Login"; }
-<h1>@ViewData["Title"]</h1>
 <!DOCTYPE html>
+<center><h2>Login</h2></center>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('');
+            background-position: unset;
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-font-smoothing: antialiased;
+            
+            
+            font-size: medium;
+        }
 
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
+        #Login-div {
+            position: absolute;
+            left: 35%;
+            top: 20%;
+            border: 8px solid #ccc;
+            padding: 30px 70px;
+            background-color: whitesmoke;
+        }
 
-        <style>
-            body {
-                background-image: url('file:///C:\Users\rubiga.rangasamy.ASPIRESYS\Desktop\Application\WebApplication1\Images\BackGround.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
+        .field-validation-error {
+            color: red;
+        }
+       
+    </style>
 
-            input {
-                padding: 12px 20px;
-                margin: 8px 0;
-                box-sizing: border-box;
-                border-radius: 4px;
-            }
-
-                input[type=text]:focus {
-                    /* border: 1px solid #555;*/
-                    width: 50%;
-                    padding: 12px 20px;
-                    margin: 8px 0;
-                    display: inline-block;
-                    border: 1px solid #ccc;
-                    box-sizing: border-box;
-                }
-
-                input[type=button], input[type=submit]:focus {
-                    border: none;
-                    padding: 16px 32px;
-                    margin: 4px 2px;
-                    cursor: pointer;
-                    background-color: green;
-                }
-        </style>
-    </head>
-    <body>
-        @using (Html.BeginForm())
+</head>
+<body>
+    
+    <div id="Login-div">
+        @using (Html.BeginForm(""))
         {
-@Html.AntiForgeryToken()
-                <div class="form-horizontal">
-                    <div align="center">
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                        <div class="form-group">
+            @Html.AntiForgeryToken()
 
-                            @Html.LabelFor(model => model.username, htmlAttributes: new { @class = "control-label col-md-2" })
-                            <div class="col-md-3">
-                                @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
-                            <div class="col-md-3">
-                                @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
-                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
-                        <br />
-                        <div class="form-group">
-                            @Html.LabelFor(model => model.RememberMe, htmlAttributes: new { @class = "control-label col-md-2" })
-                            @Html.CheckBoxFor(model => model.RememberMe, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.RememberMe, "", new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
+            <div class="form-horizontal">
 
 
-                                <input type="submit" value="Login" class="btn btn-default" />
-                            </div>
-                        </div>
-
-                    </div>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
 
-                </div> @*</div>*@
-                                <div align="center">
-                                    @ViewBag.message
-                                </div>}
-    </body>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.username, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                    @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                </div>
+
+
+                <div class="form-group">
+                    
+                    @Html.LabelFor(model => model.RememberMe, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <br />
+                    @Html.CheckBoxFor(model => model.RememberMe, new { htmlAttributes = new { @class = "form-control" } })
+                   
+                    @Html.ValidationMessageFor(model => model.RememberMe, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+
+            <span style="padding-left:300px">
+                <button type="submit" class="btn btn-info">Login</button>
+            </span>
+            <div align="center" style="color:red">
+                @ViewBag.message
+            </div>
+
+        }
+
+
+
+    </div>
+
+</body>
 </html>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+

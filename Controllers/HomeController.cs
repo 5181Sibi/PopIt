@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PopIt.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -26,10 +27,16 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -63,16 +70,18 @@ namespace WebApplication1.Controllers
                         //FormsAuthentication.SetAuthCookie(model.username, model.RememberMe);
                         if (validuser !=null)
                         {
+                            
                             return RedirectToAction("AdminHomePage", "Admin");
 
                         }
                         if(validuser2 != null)
                         {
-                            return RedirectToAction("TeacherDashboard", "Teacher");
+                            return RedirectToAction("StudentDashboard", "Students");
                         }
                         if (validuser3 != null)
                         {
-                            return RedirectToAction("StudentDashboard", "Students");
+                           
+                            return RedirectToAction("TeacherDashboard", "Teacher");
                         }
                     }
                     else
@@ -136,6 +145,7 @@ namespace WebApplication1.Controllers
                 }
             }
         }
+        
 
 
     }

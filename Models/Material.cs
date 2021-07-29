@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace WebApplication1.Models
+namespace PopIt.Models
 {
     public partial class Material
     {
