@@ -8600,19 +8600,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\sweth\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\sweth\\Source\\Repos\\PopIt\\WebApplication1.csproj",
       "projectName": "PopIt",
-      "projectPath": "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sibichakaravarthy\\source\\repos\\BookListMVC\\Github\\PopIt\\obj\\",
+      "projectPath": "C:\\Users\\sweth\\Source\\Repos\\PopIt\\WebApplication1.csproj",
+      "packagesPath": "C:\\Users\\sweth\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sweth\\Source\\Repos\\PopIt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sweth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8669,12 +8669,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.17, 3.1.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8683,7 +8677,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

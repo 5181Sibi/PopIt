@@ -31,7 +31,7 @@ namespace WebApplication1.Controllers
         }
         public ActionResult Logout()
         {
-            return View();
+            return RedirectToAction("Login", "Home");
         }
 
     }

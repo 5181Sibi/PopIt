@@ -30,9 +30,10 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        
         public ActionResult Logout()
         {
-            return View();
+            return RedirectToAction("Login", "Home");
         }
 
 
